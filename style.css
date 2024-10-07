@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Nunito Sans;
+}
+
+.containerDiv {
+    width: 100%;
+}
+
+.navBar {
+    width: 100%;
+    height: 400px;
+    background: rgb(177, 135, 135) url("https://alexottifoundation.org/img/logo.png") no-repeat right top;
+    padding: 100px;
+}
+
+#welcome {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+#help {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+}
+
+#search {
+    width: 300px;
+    height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+#header {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.questionsDiv {
+    padding: 100px;
+    width: 100%;
+}
+
+.questionsCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+}
+
+.questionsCard {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#questions {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: brown;
+}
+
+#answers{
+    color: brown;
+}
+/* Media queries for responsive design */
+
+/* Small devices (phones, 600px and below) */
+@media screen and (max-width: 600px) {
+    .navBar {
+        padding: 50px;
+        height: auto;
+        background-size: 80px; /* Adjust logo size */
+    }
+
+    #welcome {
+        font-size: 20px;
+    }
+
+    #help {
+        font-size: 40px;
+    }
+
+    #search {
+        width: 100%;
+        height: 35px;
+    }
+
+    .questionsDiv {
+        padding: 20px;
+    }
+
+    .questionsCards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .questionsCard {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media screen and (max-width: 768px) {
+    .navBar {
+        padding: 60px;
+        height: auto;
+    }
+
+    #welcome {
+        font-size: 24px;
+    }
+
+    #help {
+        font-size: 50px;
+    }
+
+    #search {
+        width: 100%;
+        height: 35px;
+    }
+
+    .questionsDiv {
+        padding: 50px;
+    }
+
+    .questionsCards {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .questionsCard {
+        width: 100%;
+    }
+}
+
+/* Large devices (desktops, 1024px and below) */
+@media screen and (max-width: 1024px) {
+    .questionsDiv {
+        padding: 50px;
+    }
+
+    .questionsCards {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .questionsCard {
+        width: 100%;
+    }
+}
